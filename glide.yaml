@@ -4,11 +4,10 @@ import:
   subpackages:
   - api
 - package: github.com/mesos/mesos-go
-  version: mesos-0.26.0
   subpackages:
-  - detector
-  - detector/zoo
-  - mesosproto
-  - upid
+  - api/v0/detector
+  - api/v0/detector/zoo
+  - api/v0/mesosproto
+  - api/v0/upid
 - package: github.com/ogier/pflag
 - package: github.com/sirupsen/logrus
