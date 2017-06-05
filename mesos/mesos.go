@@ -8,10 +8,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/CiscoCloud/mesos-consul/config"
-	"github.com/CiscoCloud/mesos-consul/consul"
-	"github.com/CiscoCloud/mesos-consul/registry"
-	"github.com/CiscoCloud/mesos-consul/state"
+	"github.com/leaprail/mesos-consul/config"
+	"github.com/leaprail/mesos-consul/consul"
+	"github.com/leaprail/mesos-consul/registry"
+	"github.com/leaprail/mesos-consul/state"
 
 	proto "github.com/mesos/mesos-go/api/v0/mesosproto"
 	log "github.com/sirupsen/logrus"
