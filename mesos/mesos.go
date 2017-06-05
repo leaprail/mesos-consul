@@ -13,7 +13,7 @@ import (
 	"github.com/CiscoCloud/mesos-consul/registry"
 	"github.com/CiscoCloud/mesos-consul/state"
 
-	proto "github.com/mesos/mesos-go/mesosproto"
+	proto "github.com/mesos/mesos-go/api/v0/mesosproto"
 	log "github.com/sirupsen/logrus"
 )
 
