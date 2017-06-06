@@ -57,8 +57,8 @@ func (c *Consul) newAgent(address string) *consulapi.Client {
 	config.Address = fmt.Sprintf("%s:%s", address, c.config.port)
 	log.Debugf("consul address: %s", config.Address)
 
-	config.HttpClient.Timeout = time.Duration(c.config.timeout) * time.Second
-	log.Debugf("consul timeout: %d", config.HttpClient.Timeout)
+	// config.HttpClient.Timeout = time.Duration(c.config.timeout) * time.Second
+	// log.Debugf("consul timeout: %d", config.HttpClient.Timeout)
 
 	if c.config.token != "" {
 		log.Debugf("setting token to %s", c.config.token)
