@@ -1,30 +1,34 @@
-hash: 7afd14062efc92eb00fbac34aa5cc20a0f4a60eb08ae763fdcbeaa3d34da4a8a
-updated: 2017-04-03T15:24:09.796014116-05:00
+hash: 76888f8a29b70e6dd8a714cf2bace1e3e03da6661d744ef31cfcbfea4a4fdac1
+updated: 2017-06-05T20:58:20.003147577-07:00
 imports:
 - name: github.com/gogo/protobuf
-  version: d2e1ade2d719b78fe5b061b4c18a9f7111b5bdc8
+  version: 5d0b7e0fe9b972b7778a9a6fe0557b3bb6cc950c
   subpackages:
   - proto
 - name: github.com/golang/glog
   version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
 - name: github.com/hashicorp/consul
-  version: 9103e77f574254016406ee512d601ad6de6e1efd
+  version: 2b4f31dfc0642e917e9ac53cebae4604ba994462
   subpackages:
   - api
 - name: github.com/hashicorp/go-cleanhttp
-  version: ad28ea4487f05916463e2423a55166280e8254b5
+  version: 3573b8b52aa7b37b9358d966a898feb387f62437
+- name: github.com/hashicorp/go-rootcerts
+  version: 6bb64b370b90e7ef1fa532be9e591a81c3493e00
 - name: github.com/hashicorp/serf
-  version: f679d7594a349263f6118db40d87122d3a474e7d
+  version: dfab144618a063232d5753eaa4250a09865106c5
   subpackages:
   - coordinate
 - name: github.com/mesos/mesos-go
-  version: 7228b13084ce3ea645dbf7c8ecb5704301a6eadf
+  version: f2cd423e881bdfb0658479ca4ef433e30f4906cd
   subpackages:
-  - detector
-  - detector/zoo
-  - mesosproto
-  - mesosutil
-  - upid
+  - api/v0/detector
+  - api/v0/detector/zoo
+  - api/v0/mesosproto
+  - api/v0/mesosutil
+  - api/v0/upid
+- name: github.com/mitchellh/go-homedir
+  version: b8bc1bf767474819792c23f32d8286a45736f1c6
 - name: github.com/ogier/pflag
   version: 45c278ab3607870051a2ea9040bb85fcb8557481
 - name: github.com/samuel/go-zookeeper
@@ -32,13 +36,13 @@ imports:
   subpackages:
   - zk
 - name: github.com/sirupsen/logrus
-  version: 7f4b1adc791766938c29457bed0703fb9134421a
+  version: 5e5dc898656f695e2a086b8e12559febbfc01562
 - name: golang.org/x/net
-  version: b4690f45fa1cafc47b1c280c2e75116efe40cc13
+  version: 59a0b19b5533c7977ddeb86b017bf507ed407b12
   subpackages:
   - context
 - name: golang.org/x/sys
-  version: 30237cf4eefd639b184d1f2cb77a581ea0be8947
+  version: b90f89a1e7a9c1f6b918820b3daa7f08488c8594
   subpackages:
   - unix
 testImports: []

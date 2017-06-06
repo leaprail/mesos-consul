@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"time"
+	// "time"
 
 	"github.com/leaprail/mesos-consul/registry"
 
