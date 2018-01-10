@@ -65,7 +65,7 @@ func parseFlags(args []string) (*config.Config, error) {
 	flags.StringVar(&c.Separator, "group-separator", "", "")
 	flags.StringVar(&c.MesosIpOrder, "mesos-ip-order", "netinfo,mesos,host", "")
 	flags.BoolVar(&c.Healthcheck, "healthcheck", false, "")
-	flags.StringVar(&c.HealthcheckIp, "healthcheck-ip", "127.0.0.1", "")
+	flags.StringVar(&c.HealthcheckIp, "healthcheck-ip", "", "")
 	flags.StringVar(&c.HealthcheckPort, "healthcheck-port", "24476", "")
 	flags.Var((funcVar)(func(s string) error {
 		c.TaskWhiteList = append(c.TaskWhiteList, s)
@@ -90,6 +90,7 @@ func parseFlags(args []string) (*config.Config, error) {
 	flags.StringVar(&c.ServiceName, "service-name", "mesos", "")
 	flags.StringVar(&c.ServiceTags, "service-tags", "", "")
 	flags.StringVar(&c.ServiceIdPrefix, "service-id-prefix", "mesos-consul", "")
+	flags.StringVar(&c.ServicePortLabel, "service-port-label", "", "")
 
 	consul.AddCmdFlags(flags)
 
@@ -136,10 +137,10 @@ Options:
   --group-separator=<separator> Choose the group separator. Will replace _ in task names (default is empty)
   --healthcheck 		Enables a http endpoint for health checks. When this
 				flag is enabled, serves a service health status on 127.0.0.1:24476 (default not enabled)
-  --healthcheck-ip=<ip> 	Health check interface ip (default 127.0.0.1)
+  --healthcheck-ip=<ip> 	Health check interface ip
   --healthcheck-port=<port>	Health check service port (default 24476)
   --mesos-ip-order		Comma separated list to control the order in
-				which github.com/leaprail/mesos-consul searches for the task IP
+				which mesos-consul searches for the task IP
 				address. Valid options are 'netinfo', 'mesos', 'docker' and 'host'
 				(default netinfo,mesos,host)
   --heartbeats-before-remove	Number of times that registration needs to fail before removing

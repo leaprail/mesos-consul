@@ -4,8 +4,13 @@ import (
 	"regexp"
 	"strings"
 
+<<<<<<< HEAD
 	"github.com/leaprail/mesos-consul/registry"
 	"github.com/leaprail/mesos-consul/state"
+=======
+	"github.com/mantl/mesos-consul/registry"
+	"github.com/mantl/mesos-consul/state"
+>>>>>>> upstream/master
 )
 
 type CheckVar struct {
@@ -31,6 +36,8 @@ func GetCheck(t *state.Task, cv *CheckVar) *registry.Check {
 			c.HTTP = interpolate(cv, l.Value)
 		case "check_script":
 			c.Script = interpolate(cv, l.Value)
+		case "check_tcp":
+			c.TCP = interpolate(cv, l.Value)
 		case "check_ttl":
 			c.TTL = interpolate(cv, l.Value)
 		case "check_interval":
