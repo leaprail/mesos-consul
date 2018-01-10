@@ -1,26 +1,26 @@
-hash: 76888f8a29b70e6dd8a714cf2bace1e3e03da6661d744ef31cfcbfea4a4fdac1
-updated: 2017-06-05T20:58:20.003147577-07:00
+hash: 940514643e7f4d184b29a1b4506b1bedacd56b16a28e58f4ea373a5610986846
+updated: 2018-01-10T14:39:07.723590674-08:00
 imports:
 - name: github.com/gogo/protobuf
-  version: 5d0b7e0fe9b972b7778a9a6fe0557b3bb6cc950c
+  version: 160de10b2537169b5ae3e7e221d28269ef40d311
   subpackages:
   - proto
 - name: github.com/golang/glog
   version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
 - name: github.com/hashicorp/consul
-  version: 2b4f31dfc0642e917e9ac53cebae4604ba994462
+  version: ebcd1787db42ed2376bea5aebc8e0a418dffdab3
   subpackages:
   - api
 - name: github.com/hashicorp/go-cleanhttp
-  version: 3573b8b52aa7b37b9358d966a898feb387f62437
+  version: d5fe4b57a186c716b0e00b8c301cbd9b4182694d
 - name: github.com/hashicorp/go-rootcerts
   version: 6bb64b370b90e7ef1fa532be9e591a81c3493e00
 - name: github.com/hashicorp/serf
-  version: dfab144618a063232d5753eaa4250a09865106c5
+  version: 2d88a6b2e9b81cce923ee42c25bfa8da841e17a0
   subpackages:
   - coordinate
 - name: github.com/mesos/mesos-go
-  version: f2cd423e881bdfb0658479ca4ef433e30f4906cd
+  version: c488712c2b5a908fc9534560386fc572c3d126bf
   subpackages:
   - api/v0/detector
   - api/v0/detector/zoo
@@ -32,17 +32,22 @@ imports:
 - name: github.com/ogier/pflag
   version: 45c278ab3607870051a2ea9040bb85fcb8557481
 - name: github.com/samuel/go-zookeeper
-  version: 1d7be4effb13d2d908342d349d71a284a7542693
+  version: 471cd4e61d7a78ece1791fa5faa0345dc8c7d5a5
   subpackages:
   - zk
 - name: github.com/sirupsen/logrus
-  version: 5e5dc898656f695e2a086b8e12559febbfc01562
+  version: d682213848ed68c0a260ca37d6dd5ace8423f5ba
+- name: golang.org/x/crypto
+  version: b3c9a1d25cfbbbab0ff4780b71c4f54e6e92a0de
+  subpackages:
+  - ssh/terminal
 - name: golang.org/x/net
-  version: 59a0b19b5533c7977ddeb86b017bf507ed407b12
+  version: 434ec0c7fe3742c984919a691b2018a6e9694425
   subpackages:
   - context
 - name: golang.org/x/sys
-  version: b90f89a1e7a9c1f6b918820b3daa7f08488c8594
+  version: 810d7000345868fc619eb81f46307107118f4ae1
   subpackages:
   - unix
+  - windows
 testImports: []

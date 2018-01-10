@@ -4,13 +4,8 @@ import (
 	"regexp"
 	"strings"
 
-<<<<<<< HEAD
 	"github.com/leaprail/mesos-consul/registry"
 	"github.com/leaprail/mesos-consul/state"
-=======
-	"github.com/mantl/mesos-consul/registry"
-	"github.com/mantl/mesos-consul/state"
->>>>>>> upstream/master
 )
 
 type CheckVar struct {
